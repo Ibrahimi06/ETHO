@@ -1,3 +1,7 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
 #xi-name{
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
@@ -105,4 +109,71 @@ div.scroll-container {
     width: 100%;
     height: 100%;
     object-fit: cover; 
+}
+
+
+body {
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+.product-container {
+    display: flex; /* Use flexbox */
+    flex-direction: row; /* Row direction */
+    align-items: center; /* Center vertically */
+    padding: 30px; /* Padding around the container */
+    background-color: #ffffff; /* White background */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    margin: 20px 0; /* Margin for separation */
+}
+.product-image {
+    flex: 1; /* Take up one part of the flex */
+    max-width: 350px; /* Max width for image */
+    margin-right: 30px; /* Space between image and text */
+    border-radius: 15px; /* Rounded corners for image */
+    overflow: hidden; /* Hide overflow */
+}
+.product-image img {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s; /* Smooth transition */
+}
+.product-image img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+.product-details {
+    flex: 2; /* Take up two parts of the flex */
+}
+.product-details h2 {
+    margin: 0; /* Remove default margin */
+    color: #343a40; /* Dark text color */
+    font-family: 'Georgia', serif; /* Elegant font */
+    font-weight: bold; /* Bold text */
+}
+.product-details p {
+    margin: 5px 0; /* Margin for paragraphs */
+    font-family: 'Arial', sans-serif; /* Clean font */
+}
+.price {
+    font-size: 1.8rem; /* Larger font for price */
+    color: #b89a6a; /* Gold color for price */
+    font-weight: bold; /* Bold text */
+}
+.btn-luxury {
+    background-color: #b89a6a; /* Gold background */
+    color: white; /* White text */
+    border: none; /* No border */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+.btn-luxury:hover {
+    background-color: #a78d5f; /* Darker gold on hover */
+}
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column; /* Stack on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+    .product-image {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add bottom margin */
+    }
 }
