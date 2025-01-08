@@ -121,6 +121,16 @@ div.scroll-container {
     justify-content: center;
     align-items: center;
 }
+.xi-heros{
+    background-image: url('./images/coswoman.jpg');
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .product-container {
     display: flex;
