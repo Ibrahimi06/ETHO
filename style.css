@@ -111,69 +111,76 @@ div.scroll-container {
     object-fit: cover; 
 }
 
+.xi-heroo{
+    background-image: url('./images/cosman.jpg');
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
 
-body {
-    background-color: #f4f4f4; /* Light background for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .product-container {
-    display: flex; /* Use flexbox */
-    flex-direction: row; /* Row direction */
-    align-items: center; /* Center vertically */
-    padding: 30px; /* Padding around the container */
-    background-color: #ffffff; /* White background */
-    border-radius: 15px; /* More rounded corners */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Soft shadow */
-    margin: 20px 0; /* Margin for separation */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+    margin: 20px 0; 
 }
 .product-image {
-    flex: 1; /* Take up one part of the flex */
-    max-width: 350px; /* Max width for image */
-    margin-right: 30px; /* Space between image and text */
-    border-radius: 15px; /* Rounded corners for image */
-    overflow: hidden; /* Hide overflow */
+    flex: 1;
+    max-width: 350px;
+    margin-right: 30px; 
+    border-radius: 15px; 
+    overflow: hidden; 
 }
 .product-image img {
-    width: 100%; /* Full width */
-    height: auto; /* Maintain aspect ratio */
-    transition: transform 0.3s; /* Smooth transition */
+    width: 100%; 
+    height: auto; 
+    transition: transform 0.3s; 
 }
 .product-image img:hover {
-    transform: scale(1.05); /* Zoom effect on hover */
+    transform: scale(1.05); 
 }
 .product-details {
-    flex: 2; /* Take up two parts of the flex */
+    flex: 2; 
 }
 .product-details h2 {
-    margin: 0; /* Remove default margin */
-    color: #343a40; /* Dark text color */
-    font-family: 'Georgia', serif; /* Elegant font */
-    font-weight: bold; /* Bold text */
+    margin: 0; 
+    color: #343a40;
+    font-family: 'Georgia', serif; 
+    font-weight: bold;
 }
 .product-details p {
-    margin: 5px 0; /* Margin for paragraphs */
-    font-family: 'Arial', sans-serif; /* Clean font */
+    margin: 5px 0; 
+    font-family: 'Arial', sans-serif; 
 }
 .price {
-    font-size: 1.8rem; /* Larger font for price */
-    color: #b89a6a; /* Gold color for price */
-    font-weight: bold; /* Bold text */
+    font-size: 1.8rem; 
+    color: #b89a6a; 
+    font-weight: bold; 
 }
 .btn-luxury {
-    background-color: #b89a6a; /* Gold background */
-    color: white; /* White text */
-    border: none; /* No border */
-    transition: background-color 0.3s; /* Smooth transition */
+    background-color: #b89a6a; 
+    color: white; 
+    border: none; 
+    transition: background-color 0.3s;
 }
 .btn-luxury:hover {
-    background-color: #a78d5f; /* Darker gold on hover */
+    background-color: #a78d5f;
 }
 @media (max-width: 768px) {
     .product-container {
-        flex-direction: column; /* Stack on smaller screens */
-        align-items: flex-start; /* Align items to the start */
+        flex-direction: column;
+        align-items: flex-start;
     }
     .product-image {
-        margin-right: 0; /* Remove right margin */
-        margin-bottom: 20px; /* Add bottom margin */
+        margin-right: 0; 
+        margin-bottom: 20px; 
     }
 }
