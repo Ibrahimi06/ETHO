@@ -2,8 +2,12 @@
     margin: 0%;
     padding: 0%;
 }
-p, h2{
+p, h2 , label{
     font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+#xi-nav{
+    color: #ccc;
 }
 #xi-name{
     font-family: "Playfair Display", serif;
@@ -38,6 +42,7 @@ p, h2{
     justify-content: center;
     align-items: center;  
 }
+
 .console{
     position: relative;
 }
@@ -89,7 +94,7 @@ div.scroll-container {
 
   .full-box {
     height: 350px; 
-    background-image: url('./images/acc.jpg');
+    background-image: url('./images/accc.jpg ');
     background-size: cover;
     display: flex;
     align-items: flex-end; 
@@ -102,20 +107,32 @@ div.scroll-container {
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 25px;
-    border-radius: 10px; /* Optional: rounded corners */
+    border-radius: 10px;
 }
 .image-container {
-    height: 450px; /* Fixed height for images */
-    overflow: hidden; /* Hide overflow */
+    height: 450px;
+    overflow: hidden; 
 }
 .image-container img {
     width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    max-height: 100%; /* Ensure image fits within container */
-    object-fit: cover; /* Cover the container */
+    height: auto;
+    max-height: 100%; 
+    object-fit: cover; 
 }
 .btn {
     margin-bottom: 10px;
+}
+
+
+.contact-form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.btn-light-gray {
+    background-color: #d3d3d3;
+    color: #333;
 }
 
 .image-box {
