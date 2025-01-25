@@ -220,6 +220,16 @@ div.scroll-container {
 .btn-luxury:hover {
     background-color: #a78d5f;
 }
+
+.table-container {
+    margin: 20px;
+}
+.table th, .table td {
+    text-align: center;
+}
+nav , nav-pills{
+    color: #333;
+}
 @media (max-width: 768px) {
     .product-container {
         flex-direction: column;
