@@ -6,6 +6,15 @@ p, h2 , label{
     font-family: 'Courier New', Courier, monospace;
     font-size: 25px;
 }
+.size-options {
+    display: flex;
+    gap: 10px; /* Space between checkboxes */
+    margin-top: 10px; /* Margin above the size options */
+}
+.size-options div {
+    display: flex;
+    align-items: center; /* Center the label with the checkbox */
+}
 #xi-nav{
     color: #ccc;
 }
