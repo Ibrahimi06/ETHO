@@ -8,12 +8,12 @@ p, h2 , label{
 }
 .size-options {
     display: flex;
-    gap: 10px; /* Space between checkboxes */
-    margin-top: 10px; /* Margin above the size options */
+    gap: 10px; 
+    margin-top: 10px;
 }
 .size-options div {
     display: flex;
-    align-items: center; /* Center the label with the checkbox */
+    align-items: center; 
 }
 #xi-nav{
     color: #ccc;
@@ -58,18 +58,36 @@ p, h2 , label{
 
 
 .image-box {
-    height: 500px; 
-    width: 100%;
-    margin: 10px;
-    border: 2px solid #ccc;
-    cursor: pointer;
     position: relative;
     overflow: hidden;
 }
 .image-box img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.image-box:hover img {
+    transform: scale(1.1);
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.image-box:hover .overlay {
+    opacity: 1;
+}
+.rating {
+    color: gold;
+    font-size: 1.2em;
 }
 .hidden-input {
     display: none;
@@ -238,6 +256,17 @@ div.scroll-container {
 }
 nav , nav-pills{
     color: #333;
+}
+.nav-link {
+    color: #6c757d; 
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.nav-link:hover {
+    color: #0d6efd;
+    background-color: #e2e6ea; 
+}
+.nav-link.active {
+    color: #6c757d; 
 }
 @media (max-width: 768px) {
     .product-container {

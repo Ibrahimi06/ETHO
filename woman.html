@@ -12,21 +12,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container" >
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom" >
-          <a  class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-            <p class="fs-4" id="xi-name">ETHO</p>
-          </a>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                <p class="fs-4 text-secondary" id="xi-name">ETHO</p>
+            </a>
     
-          <ul class="nav nav-pills" >
-            <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">HOME</a></li>
-            <li class="nav-item"><a href="men.html" class="nav-link">MAN</a></li>
-            <li class="nav-item"><a href="woman.html" class="nav-link">WOMAN</a></li>
-            <li class="nav-item"><a href="product.html" class="nav-link">PRODUCTS</a></li>
-            <li class="nav-item"><a href="cart.html" class="nav-link">MyCART</a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
-          </ul>
+            <ul class="nav nav-pills" id="xi-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active" aria-current="page" style="background-color: #f8f9fa; color: #6c757d;">HOME</a>
+                </li>
+                <li class="nav-item"><a href="men.html" class="nav-link text-secondary">MAN</a></li>
+                <li class="nav-item"><a href="woman.html" class="nav-link text-secondary">WOMAN</a></li>
+                <li class="nav-item"><a href="product.html" class="nav-link text-secondary">PRODUCTS</a></li>
+                <li class="nav-item"><a href="cart.html" class="nav-link text-secondary">MyCART</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link text-secondary">CONTACT</a></li>
+            </ul>
         </header>
     </div>
 
@@ -38,29 +40,65 @@
         <h2 class="text-center">Woman Dresses</h2>
         <div class="row">
             <div class="col-md-4 col-sm-6 mb-4">
-                <a href="cosw1.html"> 
-                    <div class="image-box">
-                        <img src="./images/cosw1.jpg" alt="Luxury Accessory 1">
+                <div class="card">
+                    <a href="cosw1.html">
+                        <div class="image-box position-relative">
+                            <img src="./images/cosw1.jpg" alt="Luxury Dress 1" class="card-img-top">
+                            <div class="overlay">
+                                <button class="btn btn-secondary">Quick View</button>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Dark Cherry Dress</h5>
+                        <p class="card-text">$219.99</p>
+                        <div class="rating">
+                            ★★★★☆
+                        </div>
                     </div>
-                </a>
+                </div>
             </div>
             <div class="col-md-4 col-sm-6 mb-4">
-                <a href="cosw2.html"> 
-                    <div class="image-box">
-                        <img src="./images/cosw2.jpg" alt="Luxury Accessory 2">
+                <div class="card">
+                    <a href="cosw2.html">
+                        <div class="image-box position-relative">
+                            <img src="./images/cosw2.jpg" alt="Luxury Dress 2" class="card-img-top">
+                            <div class="overlay">
+                                <button class="btn btn-secondary">Quick View</button>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Silky Wheat Dress</h5>
+                        <p class="card-text">$249.99</p>
+                        <div class="rating">
+                            ★★★★★
+                        </div>
                     </div>
-                </a>
+                </div>
             </div>
             <div class="col-md-4 col-sm-6 mb-4">
-                <a href="cosw3.html"> 
-                    <div class="image-box">
-                        <img src="./images/cosw3.jpg" alt="Luxury Accessory 3">
+                <div class="card">
+                    <a href="cosw3.html">
+                        <div class="image-box position-relative">
+                            <img src="./images/cosw3.jpg" alt="Luxury Dress 3" class="card-img-top">
+                            <div class="overlay">
+                                <button class="btn btn-secondary">Quick View</button>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Black Neck Dress</h5>
+                        <p class="card-text">$189.99</p>
+                        <div class="rating">
+                            ★★★★☆
+                        </div>
                     </div>
-                </a>
+                </div>
             </div>
         </div>
     </div>
-
+    
 
     <div class="container">
         <footer class="py-3 my-4">

@@ -10,26 +10,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <script>
+      function addToCart(name, size, price, image) {
+          const cart = JSON.parse(localStorage.getItem('cart')) || [];
+          cart.push({ name, size, price, image });
+          localStorage.setItem('cart', JSON.stringify(cart));
+          alert(`${name} has been added to your cart.`);
+      }
+  </script>
 </head>
 <body>
     
-    <div class="container" >
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom" >
-          <a  class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+  <div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
             <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-            <p class="fs-4" id="xi-name">ETHO</p>
-          </a>
-    
-          <ul class="nav nav-pills" >
-            <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">HOME</a></li>
-            <li class="nav-item"><a href="men.html" class="nav-link">MAN</a></li>
-            <li class="nav-item"><a href="woman.html" class="nav-link">WOMAN</a></li>
-            <li class="nav-item"><a href="product.html" class="nav-link">PRODUCTS</a></li>
-            <li class="nav-item"><a href="cart.html" class="nav-link">MyCART</a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
-          </ul>
-        </header>
-    </div>
+            <p class="fs-4 text-secondary" id="xi-name">ETHO</p>
+        </a>
+
+        <ul class="nav nav-pills" id="xi-nav">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link active" aria-current="page" style="background-color: #f8f9fa; color: #6c757d;">HOME</a>
+            </li>
+            <li class="nav-item"><a href="men.html" class="nav-link text-secondary">MAN</a></li>
+            <li class="nav-item"><a href="woman.html" class="nav-link text-secondary">WOMAN</a></li>
+            <li class="nav-item"><a href="product.html" class="nav-link text-secondary">PRODUCTS</a></li>
+            <li class="nav-item"><a href="cart.html" class="nav-link text-secondary">MyCART</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link text-secondary">CONTACT</a></li>
+        </ul>
+    </header>
+</div>
 
     
     <div class="container mt-5">
@@ -39,7 +50,7 @@
                 <p>Owning the Radiant Elegance Diamond Ring is an investment in both beauty and sentiment. It’s a timeless piece that transcends fashion trends, making it a cherished heirloom for generations to come. Whether you’re proposing to the love of your life or celebrating a milestone, this ring will leave a lasting impression.</p>
                 <p class="price">$2199.99</p>
                 <p>Additional details about the product, such as size, color options, and exclusive features.</p>
-                <button class="btn btn-luxury mt-3">Add to Cart</button>
+                <button class="btn btn-secondary mt-3" onclick="addToCart('Diamond-Ring', getSelectedSize(), '$2199.99', './images/ri.jpg')">Add to Cart</button>
             </div>
             <div class="product-image">
                 <img src="./images/ri.jpg" alt="Luxury Product Image"> 
@@ -58,6 +69,19 @@
           <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
         </footer>
       </div>
+
+      <script>
+        function getSelectedSize() {
+            const sizes = document.getElementsByName('Diamond Ring');
+            for (let i = 0; i < sizes.length; i++) {
+                if (sizes[i].checked) {
+                    return sizes[i].value;
+                }
+            }
+            return null; 
+        }
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
