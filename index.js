@@ -23,3 +23,13 @@ function addToCart(productName, productPrice) {
         alert("Please select a size for " + productName + ".");
     }
 }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const boxes = document.querySelectorAll('.contact-box');
+    boxes.forEach((box, index) => {
+        setTimeout(() => {
+            box.classList.add('visible');
+        }, index * 300); // Staggered animation
+    });
+});
