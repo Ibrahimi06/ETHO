@@ -2,9 +2,9 @@
     margin: 0%;
     padding: 0%;
 }
-p, h2 , label{
+p, h2 , label , li{
     font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
+    font-size: 20px;
 }
 .size-options {
     display: flex;
@@ -55,8 +55,6 @@ p, h2 , label{
 .console{
     position: relative;
 }
-
-
 .image-box {
     position: relative;
     overflow: hidden;
@@ -92,9 +90,6 @@ p, h2 , label{
 .hidden-input {
     display: none;
 }
-
-
-
 .bg-image {
     background-size: cover;
     background-position: center;
@@ -269,6 +264,16 @@ nav , nav-pills{
 .nav-link.active {
     color: #6c757d; 
 }
+.collapse {
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+.collapse.show {
+    max-height: 500px; 
+    opacity: 1;
+}
 
 @media (max-width: 768px) {
     .product-container {
@@ -279,4 +284,5 @@ nav , nav-pills{
         margin-right: 0; 
         margin-bottom: 20px; 
     }
+    
 }

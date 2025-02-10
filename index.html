@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etho</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,25 +16,32 @@
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
             <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                 <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-                <p class="fs-4 text-secondary" id="xi-name">ETHO</p>
+                <p class="fs-1 text-secondary" id="xi-name" >ETHO</p>
             </a>
     
             <ul class="nav nav-pills" id="xi-nav">
                 <li class="nav-item">
                     <a href="index.html" class="nav-link active" aria-current="page" style="background-color: #f8f9fa; color: #6c757d;">HOME</a>
                 </li>
-                <li class="nav-item"><a href="men.html" class="nav-link text-secondary">MAN</a></li>
-                <li class="nav-item"><a href="woman.html" class="nav-link text-secondary">WOMAN</a></li>
-                <li class="nav-item"><a href="accessories.html" class="nav-link text-secondary">ACCESSORIES</a></li>
-                <li class="nav-item"><a href="bags.html" class="nav-link text-secondary">BAGS</a></li>
-                <li class="nav-item"><a href="product.html" class="nav-link text-secondary">PRODUCTS</a></li>
-                <li class="nav-item"><a href="cart.html" class="nav-link text-secondary">MyCART</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link text-secondary">CONTACT</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle text-secondary" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        MENU
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="men.html">MAN</a></li>
+                        <li><a class="dropdown-item" href="woman.html">WOMAN</a></li>
+                        <li><a class="dropdown-item" href="accessories.html">ACCESSORIES</a></li>
+                        <li><a class="dropdown-item" href="bags.html">BAGS</a></li>
+                        <li><a class="dropdown-item" href="product.html">PRODUCTS</a></li>
+                        <li><a class="dropdown-item" href="cart.html">MyCART</a></li>
+                        <li><a class="dropdown-item" href="contact.html">CONTACT</a></li>
+                    </ul>
+                </li>
             </ul>
         </header>
     </div>
 
-      <div id="heroCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+    <div id="heroCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
         <div class="carousel-inner">
             <div class="carousel-item active hero" style="background-image: url('./images/hero.jpg');">
             </div>
@@ -59,12 +65,12 @@
     <div class="container-fluid mt-3">
         <div class="row align-items-stretch">
             <div class="col-12 col-md-6 d-flex">
-                <div class="bg-image text-bg-dark rounded-3" style="background-image: url('./images/man2.jpg'); width: 100%;">
+                <div class="bg-image text-bg-dark rounded-3" style="background-image: url('./images/men.jpg'); width: 100%;">
                     <button class="btn btn-outline-light mt-3" type="button" onclick="window.location.href='men.html'">MAN</button>
                 </div>
             </div>
             <div class="col-12 col-md-6 d-flex">
-                <div class="bg-image bg-body-tertiary border rounded-3" style="background-image: url('./images/woman1.jpg'); width: 100%;">
+                <div class="bg-image bg-body-tertiary border rounded-3" style="background-image: url('./images/womann.jpg'); width: 100%;">
                     <button class="btn btn-outline-secondary mt-3"  type="button" onclick="window.location.href='woman.html'">WOMAN</button>
                 </div>
             </div>
@@ -94,19 +100,17 @@
             </div>
         </div>
     </div>
-    </div>
+
     <div class="container">
         <footer class="py-3 my-4">
-          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">HOME</a></li>
-            <li class="nav-item"><a href="men.html" class="nav-link px-2 text-body-secondary">MAN</a></li>
-            <li class="nav-item"><a href="woman.html" class="nav-link px-2 text-body-secondary">WOMAN</a></li>
-            <li class="nav-item"><a href="https://www.instagram.com/etho.pr/" class="nav-link px-2 text-body-secondary">INSTAGRAM</a></li>
-          </ul>
-          <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">HOME</a></li>
+                <li class="nav-item"><a href="men.html" class="nav-link px-2 text-body-secondary">MAN</a></li>
+                <li class="nav-item"><a href="woman.html" class="nav-link px-2 text-body-secondary">WOMAN</a></li>
+                <li class="nav-item"><a href="https://www.instagram.com/etho.pr/" class="nav-link px-2 text-body-secondary">INSTAGRAM</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
         </footer>
-      </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </div>
 </body>
 </html>
