@@ -190,7 +190,26 @@ div.scroll-container {
     justify-content: center;
     align-items: center;
 }
+.xi-heross{
+    background-image: url('./images/acce.jpg');
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.xi-herosy{
+    background-image: url('./images/b.jpg');
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .product-container {
     display: flex;
     flex-direction: row;
