@@ -39,34 +39,18 @@
                 </ul>
             </header>
         </div>
+
         <div class="product-container mt-5">
             <div class="product-image">
-                <img src="./images/cosm2.jpg" alt="Luxury Product Image" class="img-fluid"> 
+                <img src="./images/bagm.jpg" alt="Luxury Product Image" class="img-fluid"> 
             </div>
             <div class="product-details">
-                <h2>Dark Chocolate Suit</h2>
-                <p>Description of the luxury product goes here. It should be informative and engaging to attract customers.</p>
-                <p class="price">$199.99</p>
+                <h2>The Fullgrain Buffalo</h2>
+                <p>Embrace durability and style with our Buffalo Leather Messenger Bag.</p>
+                <p class="price">$169.99</p>
                 <div class="size-options">
-                    <h5>Select Size:</h5>
-                    <div>
-                        <input type="radio" id="size-s" name="Luxury-Wheat-Suit-size" value="S">
-                        <label for="size-s">S</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="size-m" name="Luxury-Wheat-Suit-size" value="M">
-                        <label for="size-m">M</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="size-l" name="Luxury-Wheat-Suit-size" value="L">
-                        <label for="size-l">L</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="size-xl" name="Luxury-Wheat-Suit-size" value="XL">
-                        <label for="size-xl">XL</label>
-                    </div>
-                </div>
-                <button class="btn btn-secondary mt-3" onclick="addToCart('Dark Chocolate Suit', getSelectedSize(), '$199.99', './images/cosm2.jpg')">Add to Cart</button>
+
+                <button class="btn btn-secondary mt-3" onclick="addToCart('The Fullgrain Buffalo', getSelectedSize(), '$169.99', './images/bagm.jpg')">Add to Cart</button>
             </div>
         </div>
     </div>
@@ -84,9 +68,10 @@
           <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
         </footer>
       </div>
+
     <script>
         function getSelectedSize() {
-            const sizes = document.getElementsByName('Dark-Chocolste-Suit-size');
+            const sizes = document.getElementsByName('The Fullgrain Buffalo');
             for (let i = 0; i < sizes.length; i++) {
                 if (sizes[i].checked) {
                     return sizes[i].value;
